@@ -1,7 +1,20 @@
 package Main;
 
+import java.util.HashSet;
+
 public class sampleGit {
     public static void main(String[] args) {
-        System.out.println("This is my first git app testing1");
+        String name = "Sandhiya";
+        HashSet<Character> printed = new HashSet<>();
+
+        for (int i = 0; i < name.length(); i++) {
+            char c = name.charAt(i);
+            // Only print if this character has not been printed before
+            if (!printed.contains(c)) {
+                System.out.println("Skip the word as repeat");
+                System.out.println(c);
+                printed.add(c);
+            }
+        }
     }
 }
