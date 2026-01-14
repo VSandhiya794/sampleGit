@@ -14,6 +14,7 @@ public class sampleGit {
             // Only print if this character has not been printed before
             if (!printed.contains(c)) {
                 System.out.println("Skip testthe word as repeat");
+                System.out.println(" ground");
                 System.out.println(c);
                 printed.add(c);
             }
